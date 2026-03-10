@@ -1,0 +1,65 @@
+{
+  "name": "AgentAction",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "idle_cash",
+        "rebalancing",
+        "dividend",
+        "fee_optimization",
+        "liability",
+        "tax_optimization",
+        "circuit_breaker"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "dismissed",
+        "executed",
+        "expired"
+      ],
+      "default": "pending"
+    },
+    "estimated_impact": {
+      "type": "number",
+      "description": "Estimated annual dollar impact"
+    },
+    "estimated_impact_label": {
+      "type": "string"
+    },
+    "details": {
+      "type": "object",
+      "description": "Category-specific action details"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "category",
+    "priority"
+  ]
+}

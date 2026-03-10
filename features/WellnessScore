@@ -1,0 +1,46 @@
+{
+  "name": "WellnessScore",
+  "type": "object",
+  "properties": {
+    "overall_score": {
+      "type": "number",
+      "description": "0-100 wellness score"
+    },
+    "diversification_score": {
+      "type": "number"
+    },
+    "liquidity_score": {
+      "type": "number"
+    },
+    "debt_management_score": {
+      "type": "number"
+    },
+    "income_resilience_score": {
+      "type": "number"
+    },
+    "behavioral_resilience_score": {
+      "type": "number"
+    },
+    "score_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "top_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trajectory_12m": {
+      "type": "number",
+      "description": "Projected score in 12 months"
+    },
+    "total_net_worth": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "overall_score",
+    "score_date"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "FinancialAccount",
+  "type": "object",
+  "properties": {
+    "account_name": {
+      "type": "string",
+      "description": "Display name of the account"
+    },
+    "institution": {
+      "type": "string",
+      "description": "Financial institution name"
+    },
+    "account_type": {
+      "type": "string",
+      "enum": [
+        "bank",
+        "cpf",
+        "brokerage",
+        "robo_adviser",
+        "crypto",
+        "property",
+        "insurance",
+        "private_asset"
+      ],
+      "description": "Type of financial account"
+    },
+    "balance": {
+      "type": "number",
+      "description": "Current balance or value"
+    },
+    "currency": {
+      "type": "string",
+      "default": "SGD"
+    },
+    "yield_rate": {
+      "type": "number",
+      "description": "Current yield or interest rate as percentage"
+    },
+    "connection_status": {
+      "type": "string",
+      "enum": [
+        "connected",
+        "pending",
+        "error",
+        "manual"
+      ],
+      "default": "manual"
+    },
+    "last_synced": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional account-specific data"
+    }
+  },
+  "required": [
+    "account_name",
+    "institution",
+    "account_type"
+  ]
+}
+ 

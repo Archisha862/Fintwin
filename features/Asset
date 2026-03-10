@@ -1,0 +1,70 @@
+{
+  "name": "Asset",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "asset_class": {
+      "type": "string",
+      "enum": [
+        "cash",
+        "equities",
+        "fixed_income",
+        "real_estate",
+        "alternatives",
+        "crypto",
+        "cpf"
+      ],
+      "description": "Asset classification"
+    },
+    "institution": {
+      "type": "string"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "cost_basis": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string",
+      "default": "SGD"
+    },
+    "geography": {
+      "type": "string",
+      "enum": [
+        "singapore",
+        "us",
+        "europe",
+        "asia_ex_sg",
+        "global",
+        "other"
+      ]
+    },
+    "sector": {
+      "type": "string"
+    },
+    "unrealized_pnl": {
+      "type": "number"
+    },
+    "allocation_pct": {
+      "type": "number"
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "account_id": {
+      "type": "string",
+      "description": "Reference to FinancialAccount"
+    }
+  },
+  "required": [
+    "name",
+    "asset_class",
+    "current_value"
+  ]
+}

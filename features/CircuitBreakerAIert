@@ -1,0 +1,54 @@
+{
+  "name": "CircuitBreakerAlert",
+  "type": "object",
+  "properties": {
+    "alert_type": {
+      "type": "string",
+      "enum": [
+        "panic_selling",
+        "performance_chasing",
+        "overtrading",
+        "illiquidity_creep"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "warning",
+        "critical"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "historical_context": {
+      "type": "string",
+      "description": "User's own historical pattern data"
+    },
+    "recommendation": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "acknowledged",
+        "overridden",
+        "resolved"
+      ],
+      "default": "active"
+    },
+    "cooling_off_until": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "alert_type",
+    "severity",
+    "title"
+  ]
+}
