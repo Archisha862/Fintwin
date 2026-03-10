@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinTwin Autopilot
 
 ## Project Overview
@@ -76,3 +77,6 @@ Ensure the following are installed on your system:
 ```bash
 git clone https://github.com/Archisha862/Fintwin.git
 cd Fintwin
+=======
+# Fintwin
+>>>>>>> 342e194747e5cf74e9973b8fbf17e6f0f5c9579b
