@@ -1,12 +1,12 @@
 
-# WealthPulse Autopilot (Your financial twin, FinTwin)
+# WealthPulse Autopilot (Your Financial Twin, FinTwin)
 
 ## Project Overview
-FinTwin Autopilot is a smart wealth management platform designed to solve the problem of fragmented financial portfolios. Many investors in Singapore manage their finances across multiple disconnected platforms such as bank accounts, CPF balances, brokerages, and digital wallets. This fragmentation makes it difficult to understand their true financial health.
+WealthPulse Autopilot is a smart wealth management platform designed to solve the problem of fragmented financial portfolios. Many investors in Singapore manage their finances across multiple disconnected platforms such as bank accounts, CPF balances, brokerages, and digital wallets. This fragmentation makes it difficult to understand their true financial health.
 
 Our solution aggregates these assets into a **Unified Wealth Wallet**, allowing users to view and manage their financial data in one place.
 
-Instead of functioning as a static dashboard, FinTwin calculates a **real-time Wellness Score** based on five key financial dimensions:
+Instead of functioning as a static dashboard, WealthPulse calculates a **real-time Wellness Score** based on five key financial dimensions:
 
 - Diversification
 - Liquidity
@@ -18,7 +18,7 @@ The **Autopilot agent** continuously analyzes the portfolio and identifies oppor
 
 To help users avoid emotional investment decisions, the platform includes **Behavioral Circuit Breakers** that provide timely prompts during periods of market volatility.
 
-For financial advisers, FInTwin highlights clients who may require attention, transforming wealth management from a reactive process into a proactive partnership.
+For financial advisers, WealthPulse highlights clients who may require attention, transforming wealth management from a reactive process into a proactive partnership.
 
 ---
 
